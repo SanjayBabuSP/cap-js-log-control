@@ -101,9 +101,9 @@ jobs:
           echo "Waiting for npm registry to propagate..."
           sleep 30
           EXPECTED_VERSION=$(node -p "require('./package.json').version")
-          PUBLISHED_VERSION=$(npm view cap-js-log-control@${EXPECTED_VERSION} version 2>/dev/null || echo "NOT_FOUND")
+          PUBLISHED_VERSION=$(npm view @sanjay-sde/cap-js-log-control@${EXPECTED_VERSION} version 2>/dev/null || echo "NOT_FOUND")
           if [ "$PUBLISHED_VERSION" != "$EXPECTED_VERSION" ]; then
             echo "ERROR: Expected version ${EXPECTED_VERSION} but found ${PUBLISHED_VERSION} on npm registry"
             exit 1
           fi
-          echo "Verified: cap-js-log-control@${EXPECTED_VERSION} is live on npm"
+          echo "Verified: @sanjay-sde/cap-js-log-control@${EXPECTED_VERSION} is live on npm"
