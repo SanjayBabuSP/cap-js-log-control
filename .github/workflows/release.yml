@@ -57,6 +57,8 @@ jobs:
 
       - name: Publish canary to npm
         run: npm publish --tag canary --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   # Step 2b: Publish — triggered only when release-please creates a release (PR merged).
   publish:
@@ -91,6 +93,8 @@ jobs:
             echo "Publishing ${VERSION} as latest"
             npm publish --provenance
           fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Verify publish
         run: |
