@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/SanjayBabuSP/cap-js-log-control/compare/v0.2.0...v0.3.0) (2026-05-24)
+
+
+### Features
+
+* rename package to @sanjay-sde/cap-js-log-control ([bac2e94](https://github.com/SanjayBabuSP/cap-js-log-control/commit/bac2e941c043111e631150237020c6f84d3e7352))
+
 ## [0.2.0](https://github.com/SanjayBabuSP/cap-js-log-control/compare/v0.1.0...v0.2.0) (2026-05-24)
 
 

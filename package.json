@@ -1,6 +1,6 @@
 {
   "name": "@sanjay-sde/cap-js-log-control",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "CAP plugin for controlling CDS logger verbosity and OpenTelemetry DiagLogger noise — reduce log clutter, surface real errors",
   "main": "cds-plugin.js",
   "types": "dist/main.d.ts",
